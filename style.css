@@ -5,6 +5,11 @@
   src: url(./fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
 }
 
+@font-face {
+  font-family: "Futura";
+  src: url(./fonts/FUTURA55REGULAR.TTF);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -128,7 +133,9 @@ body {
   /* added only for this project .. */
   line-height: 1;
   font-family: "Rocgrotesk";
-  /* min-width: 375px; */
+  min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
 }
 ol,
 ul {
@@ -221,6 +228,7 @@ h2 {
   /* border-top: 1px solid #FF0040;
   border-bottom: 1px solid #FF0040; */
 
+  width: 100%;
   padding: 20px;
   position: relative;
   display: flex;
@@ -255,10 +263,12 @@ h2 {
 
 .links {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .links .inside {
   width: 100%;
+  /* padding: 0 15rem; */
 }
 
 .links .inside .link-container {
@@ -274,6 +284,7 @@ h2 {
 .links .inside .link-container ul {
   display: flex;
   flex-direction: column;
+  font-family: "Futura";
 }
 
 .links .inside .link-container ul li {
@@ -284,13 +295,29 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .links .inside .link-container .contact-us {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+footer {
+
+  border-top: 1px solid grey;
+}
+
+footer .footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  font-family: "Futura";
+  text-transform: uppercase;
 }
 
 /** MEDIA QUERIES **/
