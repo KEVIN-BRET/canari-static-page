@@ -181,7 +181,6 @@ body {
 main {
   /* flex: 1; */
   margin: auto;
-
 }
 
 h1 {
@@ -343,6 +342,20 @@ footer .footer-container {
   padding: 15px;
   font-family: "Futura";
   text-transform: uppercase;
+  gap: 20px;
+}
+
+footer .footer-container .social-network {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+footer .footer-container .social-network img {
+  height: 32px;
 }
 
 /** MEDIA QUERIES **/
@@ -355,5 +368,11 @@ footer .footer-container {
 
   .canari .inside .content h2 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer .footer-container {
+    flex-direction: column;
   }
 }
