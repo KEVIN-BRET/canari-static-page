@@ -255,7 +255,7 @@ h2 {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 65px;
 }
 
 .customers .inside .content .logos-container::before,
