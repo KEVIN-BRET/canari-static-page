@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Rocgrotesk";
+  src: url(./fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  // added only for this project ..
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+input,
+textarea,
+button,
+select,
+span,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  /* added only for this project .. */
+  line-height: 1;
+  font-family: "Rocgrotesk";
+  /* min-width: 375px; */
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515;
+  color: white;
+  margin-top: 130px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.inside {
+  position: relative;
+  padding: 0 7rem;
+  margin: auto;
+}
+
+.canari {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.canari .inside {
+  position: relative;
+  margin: auto;
+}
+
+.canari .inside .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.canari .inside .content img {
+  max-width: 100%;
+}
+
+.customers .inside .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.customers .inside .content p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.customers .inside .content .logos-container {
+  /* border-top: 1px solid #FF0040;
+  border-bottom: 1px solid #FF0040; */
+
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.customers .inside .content .logos-container::before,
+.customers .inside .content .logos-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ff0040, transparent);
+}
+
+.customers .inside .content .logos-container::before {
+  top: 0;
+}
+
+.customers .inside .content .logos-container::after {
+  bottom: 0;
+}
+
+.customers .inside .content .logos-container img {
+  max-height: 40px;
+}
+
+@media (max-width: 800px) {
+  .inside {
+    padding: 0 3rem;
+    /* margin: 10rem auto; */
+  }
+}
