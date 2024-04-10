@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "Rocgrotesk";
   src: url(./fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
@@ -96,7 +98,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  // added only for this project ..
   text-decoration: none;
   color: inherit;
   list-style: none;
@@ -170,7 +171,7 @@ h2 {
 
 .inside {
   position: relative;
-  padding: 0 7rem;
+  padding: 0 10rem;
   margin: auto;
 }
 
@@ -194,6 +195,10 @@ h2 {
   margin-bottom: 100px;
 }
 
+.canari .inside .content h2 {
+  text-align: center;
+}
+
 .canari .inside .content img {
   max-width: 100%;
 }
@@ -204,6 +209,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  margin-bottom: 60px;
 }
 
 .customers .inside .content p {
@@ -247,9 +253,55 @@ h2 {
   max-height: 40px;
 }
 
+.links {
+  display: flex;
+}
+
+.links .inside {
+  width: 100%;
+}
+
+.links .inside .link-container {
+  /* border: 1px solid pink; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.links .inside .link-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.links .inside .link-container ul li {
+  margin-bottom: 7px;
+}
+
+.links .inside .link-container .social-network {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.links .inside .link-container .contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/** MEDIA QUERIES **/
+
 @media (max-width: 800px) {
   .inside {
     padding: 0 3rem;
     /* margin: 10rem auto; */
+  }
+
+  .canari .inside .content h2 {
+    font-size: 20px;
   }
 }
