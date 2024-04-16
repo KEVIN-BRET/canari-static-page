@@ -358,6 +358,12 @@ footer .footer-container .social-network img {
   height: 32px;
 }
 
+.noscript {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px;
+}
+
 /** MEDIA QUERIES **/
 
 @media (max-width: 800px) {
