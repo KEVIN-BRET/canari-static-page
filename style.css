@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "Rocgrotesk";
+/* @font-face {
+  font-family: "roc-grotesk";
   src: url(./fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
-}
+} */
 
 @font-face {
   font-family: "Futura";
@@ -132,7 +132,7 @@ a {
 body {
   /* added only for this project .. */
   line-height: 1;
-  font-family: "Rocgrotesk";
+  font-family: "roc-grotesk";
   min-width: 375px;
   max-width: 1440px;
   margin: auto;
